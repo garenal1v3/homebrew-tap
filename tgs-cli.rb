@@ -5,21 +5,21 @@
 class TgsCli < Formula
   desc "Fast CLI client for searching Telegram"
   homepage "https://github.com/garenal1v3/tgs-cli"
-  version "0.0.1"
+  version "1.0.0"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/garenal1v3/tgs-cli/releases/download/v0.0.1/tgs-cli_darwin_amd64.tar.gz"
-      sha256 "e4eafb2a1d4b3a7b27b0ac8a9dd00693964bb0c62e9a53551c6307243339273f"
+      url "https://github.com/garenal1v3/tgs-cli/releases/download/v1.0.0/tgs-cli_darwin_amd64.tar.gz"
+      sha256 "234a4baf1d119ed84eeecfb7f84890142c9b5da5346707e13edc814ea14424b3"
 
       define_method(:install) do
         bin.install "tgs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/garenal1v3/tgs-cli/releases/download/v0.0.1/tgs-cli_darwin_arm64.tar.gz"
-      sha256 "be39aa4d0ca719dd170f7419dd4364cecd1cebd5d273327c55c287b3a3a1db65"
+      url "https://github.com/garenal1v3/tgs-cli/releases/download/v1.0.0/tgs-cli_darwin_arm64.tar.gz"
+      sha256 "bfc02261aff5484d96e2be2f423a5e6d99c69de9604753c400c80cab66916ff0"
 
       define_method(:install) do
         bin.install "tgs"
@@ -29,15 +29,15 @@ class TgsCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/garenal1v3/tgs-cli/releases/download/v0.0.1/tgs-cli_linux_amd64.tar.gz"
-      sha256 "941d14be94cb3c14f82852cf69b978ed21535ced9736a3d55b465b8812f13da9"
+      url "https://github.com/garenal1v3/tgs-cli/releases/download/v1.0.0/tgs-cli_linux_amd64.tar.gz"
+      sha256 "1d1a9bd4ae33f9fcd92bc67dac08885389d88e49c4ac083a7203baf22f0889ca"
       define_method(:install) do
         bin.install "tgs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/garenal1v3/tgs-cli/releases/download/v0.0.1/tgs-cli_linux_arm64.tar.gz"
-      sha256 "2ba0aa2bcd7fe5a851f951751d20d7e2e14b9662079cdff7f2acc40620f39caf"
+      url "https://github.com/garenal1v3/tgs-cli/releases/download/v1.0.0/tgs-cli_linux_arm64.tar.gz"
+      sha256 "97e63598265cb44951b928ecf256d1713ef729ce4c25ddab39555406eb092c46"
       define_method(:install) do
         bin.install "tgs"
       end
